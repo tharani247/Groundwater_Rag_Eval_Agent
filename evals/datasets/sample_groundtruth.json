@@ -1,0 +1,311 @@
+{
+  "name": "Nebraska Groundwater Policy Ground Truth",
+  "version": "1.0",
+  "description": "15 realistic evaluation questions covering groundwater permits, regulations, allocation, enforcement, and agency authority in Nebraska. Derived from Nebraska Legislature statutes, CPNRD rules, and DNR guidance.",
+  "questions": [
+    {
+      "id": "GW-001",
+      "question": "What permits are required to drill a new well in Nebraska?",
+      "expected_answer": "In Nebraska, drilling a new well generally requires obtaining a well permit from the relevant Natural Resources District (NRD). The NRD issues permits under the Nebraska Groundwater Management and Protection Act. Applicants must submit a well registration and may need to demonstrate the well will not impair existing water rights. Some districts also require a water use permit if the well will withdraw water above a threshold volume.",
+      "expected_sources": ["cpnrd.org", "nebraskalegislature.gov", "dnr.nebraska.gov"],
+      "minimum_required_facts": [
+        "permit required before drilling",
+        "Natural Resources District issues permits",
+        "Groundwater Management and Protection Act governs"
+      ],
+      "difficulty": "easy",
+      "category": "permit_requirements",
+      "rubric": {
+        "mentions_regulatory_authority": true,
+        "cites_specific_statute_or_rule": true,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": true,
+        "acknowledges_limits": false
+      },
+      "notes": "Core permit question — expected to produce a strong retrieval hit."
+    },
+    {
+      "id": "GW-002",
+      "question": "Who regulates groundwater use in Nebraska?",
+      "expected_answer": "Groundwater in Nebraska is primarily regulated by Natural Resources Districts (NRDs), which are political subdivisions created under Nebraska law. The Nebraska Department of Natural Resources (DNR) oversees surface water allocation and coordinates with NRDs on integrated management. The Nebraska Legislature sets the statutory framework through the Groundwater Management and Protection Act (Chapter 46).",
+      "expected_sources": ["nebraskalegislature.gov", "dnr.nebraska.gov", "cpnrd.org"],
+      "minimum_required_facts": [
+        "Natural Resources Districts regulate groundwater",
+        "Nebraska Department of Natural Resources has oversight role",
+        "Chapter 46 provides statutory authority"
+      ],
+      "difficulty": "easy",
+      "category": "regulatory_authority",
+      "rubric": {
+        "mentions_regulatory_authority": true,
+        "cites_specific_statute_or_rule": true,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": false,
+        "acknowledges_limits": false
+      }
+    },
+    {
+      "id": "GW-003",
+      "question": "What is the Groundwater Management and Protection Act?",
+      "expected_answer": "The Nebraska Groundwater Management and Protection Act is codified primarily in Chapter 46 of the Nebraska Statutes. It establishes the authority of Natural Resources Districts to manage and protect groundwater resources, sets standards for well permitting, authorizes controls during hydrologic emergencies, and requires integrated management plans where groundwater is hydraulically connected to surface water.",
+      "expected_sources": ["nebraskalegislature.gov", "dnr.nebraska.gov"],
+      "minimum_required_facts": [
+        "codified in Chapter 46 of Nebraska Statutes",
+        "grants authority to Natural Resources Districts",
+        "covers well permitting",
+        "addresses hydrologic emergencies"
+      ],
+      "difficulty": "medium",
+      "category": "legal_definitions",
+      "rubric": {
+        "mentions_regulatory_authority": true,
+        "cites_specific_statute_or_rule": true,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": false,
+        "acknowledges_limits": true
+      }
+    },
+    {
+      "id": "GW-004",
+      "question": "What are the pumping restrictions during a drought in the Central Platte Natural Resources District?",
+      "expected_answer": "The Central Platte NRD can impose pumping restrictions during hydrologic emergencies or declared droughts. Under its rules and regulations, the NRD board may order reductions in groundwater allocations, restrict new pumping, or require rotation among existing users. Specific restriction levels depend on the declared stage of the hydrologic emergency.",
+      "expected_sources": ["cpnrd.org"],
+      "minimum_required_facts": [
+        "CPNRD board can impose pumping restrictions",
+        "restrictions tied to hydrologic emergency declaration",
+        "allocation reductions may be ordered"
+      ],
+      "difficulty": "medium",
+      "category": "drought_restrictions",
+      "rubric": {
+        "mentions_regulatory_authority": true,
+        "cites_specific_statute_or_rule": false,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": true,
+        "acknowledges_limits": true
+      }
+    },
+    {
+      "id": "GW-005",
+      "question": "What forms are required to apply for a well permit in the Central Platte NRD?",
+      "expected_answer": "The Central Platte NRD requires applicants to complete a well permit application form, available on the CPNRD website. Applicants must provide property information, intended water use, proposed well location and depth, and the licensed driller's information. Supporting documentation may include a site map or legal land description.",
+      "expected_sources": ["cpnrd.org"],
+      "minimum_required_facts": [
+        "well permit application form required",
+        "licensed driller information must be provided",
+        "intended water use must be stated"
+      ],
+      "difficulty": "easy",
+      "category": "procedure",
+      "rubric": {
+        "mentions_regulatory_authority": true,
+        "cites_specific_statute_or_rule": false,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": true,
+        "acknowledges_limits": false
+      }
+    },
+    {
+      "id": "GW-006",
+      "question": "What happens if a landowner exceeds their water allocation in Nebraska?",
+      "expected_answer": "Exceeding a groundwater allocation in Nebraska can result in enforcement action by the relevant Natural Resources District. Penalties may include fines, orders to reduce pumping, permit suspension, or referral to the Nebraska Attorney General. The severity depends on the NRD's rules and the degree of over-use.",
+      "expected_sources": ["nebraskalegislature.gov", "cpnrd.org"],
+      "minimum_required_facts": [
+        "enforcement action by NRD",
+        "penalties may include fines",
+        "pumping orders or permit suspension possible"
+      ],
+      "difficulty": "medium",
+      "category": "enforcement",
+      "rubric": {
+        "mentions_regulatory_authority": true,
+        "cites_specific_statute_or_rule": false,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": true,
+        "acknowledges_limits": true
+      }
+    },
+    {
+      "id": "GW-007",
+      "question": "What are the groundwater allocation limits in the Central Platte Natural Resources District?",
+      "expected_answer": "The Central Platte NRD sets annual groundwater allocation limits for irrigated acres within the district. Allocation limits are tied to the district's integrated management plan and may vary by water management area. Users exceeding their annual allocation face restrictions in subsequent years.",
+      "expected_sources": ["cpnrd.org"],
+      "minimum_required_facts": [
+        "annual allocation limits exist",
+        "limits set per irrigated acre",
+        "integrated management plan governs allocations"
+      ],
+      "difficulty": "hard",
+      "category": "allocation_limits",
+      "rubric": {
+        "mentions_regulatory_authority": true,
+        "cites_specific_statute_or_rule": false,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": true,
+        "acknowledges_limits": true
+      }
+    },
+    {
+      "id": "GW-008",
+      "question": "How do I register a new irrigation well in Nebraska?",
+      "expected_answers": "To register a new irrigation well in Nebraska, the landowner must file a well registration with the relevant NRD before drilling begins. The registration must include the planned location, depth, and intended use. The driller must also be licensed by the state. After drilling, a well completion report is typically required.",
+      "expected_answer": "To register a new irrigation well in Nebraska, the landowner must file a well registration with the relevant NRD before drilling begins. The registration must include the planned location, depth, and intended use. The driller must be licensed. After drilling, a well completion report is required.",
+      "expected_sources": ["cpnrd.org", "nebraskalegislature.gov"],
+      "minimum_required_facts": [
+        "well registration required before drilling",
+        "licensed driller required",
+        "well completion report required after drilling"
+      ],
+      "difficulty": "easy",
+      "category": "well_registration",
+      "rubric": {
+        "mentions_regulatory_authority": true,
+        "cites_specific_statute_or_rule": false,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": true,
+        "acknowledges_limits": false
+      }
+    },
+    {
+      "id": "GW-009",
+      "question": "What is a hydrologic emergency and who can declare one?",
+      "expected_answer": "A hydrologic emergency in Nebraska is a condition in which groundwater levels have declined to a point where long-term water availability is threatened. Under the Groundwater Management and Protection Act, a Natural Resources District board can declare a hydrologic emergency after prescribed findings. The declaration triggers enhanced regulatory authority including pumping restrictions, moratoriums on new wells, and mandatory conservation measures.",
+      "expected_sources": ["nebraskalegislature.gov", "dnr.nebraska.gov"],
+      "minimum_required_facts": [
+        "hydrologic emergency defined in Nebraska statute",
+        "NRD board declares hydrologic emergency",
+        "triggers pumping restrictions and conservation measures"
+      ],
+      "difficulty": "hard",
+      "category": "legal_definitions",
+      "rubric": {
+        "mentions_regulatory_authority": true,
+        "cites_specific_statute_or_rule": true,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": false,
+        "acknowledges_limits": true
+      }
+    },
+    {
+      "id": "GW-010",
+      "question": "Can a municipality override NRD groundwater rules in Nebraska?",
+      "expected_answer": "No. Natural Resources Districts hold primary authority over groundwater management under Nebraska law. Municipalities do not have the authority to override NRD rules governing groundwater. However, municipalities can coordinate with NRDs on water supply planning and may have separate authority over municipal water utilities under other statutes.",
+      "expected_sources": ["nebraskalegislature.gov"],
+      "minimum_required_facts": [
+        "NRDs hold primary groundwater authority",
+        "municipalities cannot override NRD groundwater rules"
+      ],
+      "difficulty": "hard",
+      "category": "regulatory_authority",
+      "rubric": {
+        "mentions_regulatory_authority": true,
+        "cites_specific_statute_or_rule": false,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": false,
+        "acknowledges_limits": true
+      }
+    },
+    {
+      "id": "GW-011",
+      "question": "What must a well driller submit after completing a well in Nebraska?",
+      "expected_answer": "After completing a well in Nebraska, the licensed driller must submit a well completion report (also called a well log) to the Nebraska Department of Natural Resources within 60 days of completion. The report includes the well location, depth, casing specifications, geologic materials encountered, and static water level.",
+      "expected_sources": ["dnr.nebraska.gov", "nebraskalegislature.gov"],
+      "minimum_required_facts": [
+        "well completion report required",
+        "submitted to Nebraska DNR",
+        "must include well depth and location",
+        "submitted within 60 days"
+      ],
+      "difficulty": "medium",
+      "category": "procedure",
+      "rubric": {
+        "mentions_regulatory_authority": true,
+        "cites_specific_statute_or_rule": false,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": true,
+        "acknowledges_limits": false
+      }
+    },
+    {
+      "id": "GW-012",
+      "question": "What are the rules for well spacing in Nebraska?",
+      "expected_answer": "Nebraska law and NRD rules establish minimum spacing requirements between wells to prevent interference. Spacing requirements vary by NRD and by well type (irrigation, domestic, municipal). In some NRDs, irrigation wells must be set a minimum distance from property lines and from other wells. Specific spacing rules are set in each NRD's regulations.",
+      "expected_sources": ["cpnrd.org", "nebraskalegislature.gov"],
+      "minimum_required_facts": [
+        "minimum well spacing requirements exist",
+        "spacing varies by NRD and well type",
+        "intended to prevent interference between wells"
+      ],
+      "difficulty": "medium",
+      "category": "permit_requirements",
+      "rubric": {
+        "mentions_regulatory_authority": true,
+        "cites_specific_statute_or_rule": false,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": true,
+        "acknowledges_limits": true
+      }
+    },
+    {
+      "id": "GW-013",
+      "question": "What is an integrated management plan and why does it matter for groundwater users?",
+      "expected_answer": "An integrated management plan (IMP) is a formal agreement between a Natural Resources District and the Nebraska Department of Natural Resources to jointly manage a river basin where groundwater and surface water are hydraulically connected. IMPs set targets for stream flow and groundwater levels. They matter for groundwater users because they may impose additional allocation limits, well moratoriums, or augmentation requirements to protect downstream surface water rights.",
+      "expected_sources": ["dnr.nebraska.gov", "nebraskalegislature.gov"],
+      "minimum_required_facts": [
+        "integrated management plan coordinates NRD and DNR",
+        "applies where groundwater and surface water are connected",
+        "may impose additional limits on groundwater users"
+      ],
+      "difficulty": "hard",
+      "category": "policy_overview",
+      "rubric": {
+        "mentions_regulatory_authority": true,
+        "cites_specific_statute_or_rule": false,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": true,
+        "acknowledges_limits": true
+      }
+    },
+    {
+      "id": "GW-014",
+      "question": "How does Nebraska define a domestic well versus an irrigation well?",
+      "expected_answer": "Nebraska statutes define a domestic well as a well used primarily for household and residential purposes, including drinking water, sanitation, and watering of a limited number of livestock. An irrigation well is defined as a well used to apply water to crops or land for agricultural production. The distinction matters because irrigation wells are subject to more stringent permitting requirements and allocation limits than domestic wells.",
+      "expected_sources": ["nebraskalegislature.gov"],
+      "minimum_required_facts": [
+        "domestic well used for household purposes",
+        "irrigation well used for agricultural production",
+        "irrigation wells subject to stricter permitting"
+      ],
+      "difficulty": "medium",
+      "category": "legal_definitions",
+      "rubric": {
+        "mentions_regulatory_authority": false,
+        "cites_specific_statute_or_rule": true,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": true,
+        "acknowledges_limits": false
+      }
+    },
+    {
+      "id": "GW-015",
+      "question": "What is the process for challenging an NRD groundwater permit decision in Nebraska?",
+      "expected_answer": "A party aggrieved by an NRD groundwater permit decision may appeal the decision to the NRD board at a formal hearing. If still aggrieved after the board hearing, the party may further appeal to the Nebraska District Court under the Administrative Procedure Act. The appeal must be filed within the statutory deadline after the board's final order.",
+      "expected_sources": ["nebraskalegislature.gov"],
+      "minimum_required_facts": [
+        "appeal first goes to NRD board hearing",
+        "further appeal to Nebraska District Court",
+        "Administrative Procedure Act governs appeal process",
+        "filing deadline applies"
+      ],
+      "difficulty": "hard",
+      "category": "enforcement",
+      "rubric": {
+        "mentions_regulatory_authority": true,
+        "cites_specific_statute_or_rule": true,
+        "answers_without_hallucination": true,
+        "provides_actionable_guidance": true,
+        "acknowledges_limits": false
+      }
+    }
+  ]
+}
